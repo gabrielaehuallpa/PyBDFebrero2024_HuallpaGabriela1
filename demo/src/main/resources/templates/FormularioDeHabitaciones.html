@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+    <title>FORMULARIO DE HABTACIONES</title> <!-- muestra el titulo en la pestaña del navegador -->
+    <!-- Agregar la hoja de estilo de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<header class="container mt-3">
+    <h1 class="text-center">FormularioDeHabitaciones</h1>
+    <div class="text-center">
+        <a href="http://localhost:8080/" class="btn btn-primary">INICIO</a>
+    <a href="http://localhost:8080/REGISTRODEHABITACIONES" class="btn btn-primary">REGISTRO DE HABITACIONES</a>
+    
+    <a href="http://localhost:8080/INFORMACIONDEHABITACIONES" class="btn btn-primary">DATOS DE HABITACIONES
+     </a>
+    </div>
+</header>
+
+<main class="container mt-3">
+    <form>
+        <div class="form-group">
+            <label for="nombre">Codigo:</label>
+            <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="form-group">
+            
+        </div>
+        <div class="form-group">
+            <label for="dni">Tipo:</label>
+            <select class="form-control" id="genero">
+                <option value=>Regular</option>
+                <option value=>Premium</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="genero">Cama:</label>
+            <select class="form-control" id="genero">
+                <option value="Simple">Simple</option>
+                <option value="Doble">Doble</option>
+                <option value="Triple">Triple</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="genero">Estado:</label>
+            <select class="form-control" id="genero">
+                <option value="masculino">Ocupado</option>
+                <option value="femenino">Libre</option>
+            </select>
+        </div>
+       
+    </form>
+</main>
+
+</html>
