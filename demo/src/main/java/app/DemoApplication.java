@@ -7,9 +7,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication // se usa una importacion para usar el sprint tool
-@ComponentScan(basePackages = {"app"}) // Escanea los paquetes que contienen tus clases
+@ComponentScan(basePackages = {"app","models"}) // Escanea los paquetes que contienen tus clases
 public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
+
+
