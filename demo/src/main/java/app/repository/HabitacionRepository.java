@@ -9,3 +9,4 @@ import app.models.Habitacion;// me guia hacia donde se trasladan los datos.
 public interface HabitacionRepository extends CrudRepository <Habitacion, Integer > {
     // No es necesario agregar ningún método aquí, CrudRepository proporciona métodos CRUD básicos
 }
+/// CRUD

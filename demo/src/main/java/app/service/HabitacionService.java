@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;  // hace la conex
 import org.springframework.stereotype.Service;
 import app.models.Habitacion;
 import app.repository.HabitacionRepository;
+import java.util.List;
 
 @Service
 public class HabitacionService {
@@ -18,8 +19,18 @@ public class HabitacionService {
     }
     
 
+
    
     // Otros métodos según sea necesario
 
+
+    public List<Habitacion> busacarHabitacion () {
+
+ return(List<Habitacion>) habitacionRepository.findAll(); // find (esccanea todo)
+
+
+    }
+
     
-}
+} 
+

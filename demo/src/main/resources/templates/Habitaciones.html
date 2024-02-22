@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.thymeleaf.org"> <!-- conecta mi vista desde mi bd pasando x el controlador devolviendo la vista hacia el html
+ -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,21 +31,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tr th:each="habitacion: ${habitaciones}" > <!--  ARRAID --each:buscar///bucle habitacion x habitacion, objeto -->
+                    <td th:text="${habitacion.id}">Codigo </td> 
+                    <td th:text="${habitacion.tipo}">Tipo </td> 
+                    <td th:text="${habitacion.cama}">Cama</td> 
+                    <td th:text="${habitacion.estado}">Estado </td> 
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+              
             </tbody>
         </table>
     </div>
