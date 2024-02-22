@@ -55,7 +55,7 @@ HabitacionRepository habitacionRepository;
     public String guardarHabitacion( Habitacion habitacion) {
         habitacionService.guardarHabitacion(habitacion);// procesa la inform
         habitacionService.busacarHabitacion() ;
-        return "exito";
+        return "redirect:/INFORMACIONDEHABITACIONES";
     }
 
 
