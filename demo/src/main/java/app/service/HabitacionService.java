@@ -1,5 +1,6 @@
 package app.service;
 
+//import org.hibernate.query.NativeQuery.ReturnProperty;
 import org.springframework.beans.factory.annotation.Autowired;  // hace la conexion buscaar!!
 import org.springframework.stereotype.Service;
 import app.models.Habitacion;
@@ -30,7 +31,16 @@ public class HabitacionService {
 
 
     }
+public List <Habitacion> buscarHabitacionesLibres(){
+    return habitacionRepository.findByEstado ("Libre");
+}
+    public List<Habitacion> buscarHabitacionesDobles (){
+        return  habitacionRepository.findByCama ("Doble");
 
-    
+    }
+
+  public List<Habitacion>buscarHabitacionesPremium(){
+    return habitacionRepository.findByTipo("Premium");
+  }
 } 
 

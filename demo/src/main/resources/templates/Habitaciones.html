@@ -19,7 +19,25 @@
              </a>
         </div>
     </header>
-    
+    <!-- AGREGADO DE FILTRADO-->
+<div class="container mt-3">
+<form action="/INFORMACIONDEHABITACIONES" method="GET">
+<label for="filtro">Filtrar habitaciones</label>
+<select id="filtro" name="filtro">
+    <option value=""> Todas las habitaciones </option>
+<option value="libres">Habitaciones libres </option>
+    <option value="dobles" >Habitaciones Dobles </option>
+    <option value="premium" >Habitaciones Premium</option>
+</select>
+<button type="submit" class="btn btn-primary">Filtrar</button> 
+</form>
+
+
+</div>
+
+
+
+
     <div class="container mt-3">
         <table class="table">
             <thead class="thead-dark">
